@@ -31,5 +31,5 @@ npm install three @react-three/fiber @react-three/drei
 
 ## gltf, look models in sketchfab
 npm install -g gltf-pipeline
-gltf-pipeline -i scene.gltf -o laptopcp.gltf -d
-npx gltfjsx laptopcp.gltf --transform
+* gltf-pipeline -i scene.gltf -o laptopcp.gltf -d
+* npx gltfjsx laptopcp.gltf --transform

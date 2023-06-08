@@ -50,13 +50,13 @@ function Projects() {
           <Cards>
          
             <Card imagen={"headphone.JPG"} titulo={"Playlist API Rest"} descripcion="API REST TypeScript + Express. Models created by Prisma as ORM . Using this API REST you can save your music and create Playlist through json requests. Click on the screen you will get to the repository in github." 
-            tools={["Node.js", "Typescript", "Express", "Bcrypt-Jwt"]}></Card>
+            tools={["Node.js", "Typescript", "Express", "Bcrypt-Jwt"]} link_img= 'https://github.com/RenatoCespedes/playlist-project' ></Card>
             <Card imagen={"paymentapi.jpg"} titulo={"Payments API Rest"} descripcion="API REST Django. Using this API REST you can create and modify your services, make payments for services, show payments. Click on the screen you will get to the repository in github." 
-            tools={["Django", "rest-framework", "Sqlite", "jsonwebtoken"]}></Card>
+            tools={["Django", "rest-framework", "Sqlite", "jsonwebtoken"]} link_img='https://github.com/Aljes2310/API-Pagos-Servicios'></Card>
             <Card imagen={"streamlit-portfolio.JPG"} titulo={"Streamlit Dashboard"} descripcion="Little and simple dashboard using Python and deployed in Streamlit Cloud. Deployed for purpose of research Click on the screen you will get to the dashboard." 
-            tools={["Python", "Plotly", "Streamlit", "Folium"]}></Card>
+            tools={["Python", "Plotly", "Streamlit", "Folium"]} link_img={'https://aljes2310-streamlit-cpue-calamar-gigante-dashboard-app-eal9da.streamlit.app/'}></Card>
             <Card imagen={"health.JPG"} titulo={"Health Tracker"} descripcion="App web that help you to remember your medication or pills easily. Just fill out the form with the start and final date, hours interval , text and you will recieve a recordatory message at the exact time that you need to take you medicine." 
-            tools={["Twilio", "Express.js", "Typescript", "React"]}></Card>
+            tools={["Twilio", "Express.js", "Typescript", "React"]} link_img='https://health-tracker-frontend-peach.vercel.app/' ></Card>
 
           </Cards>
       </Container>

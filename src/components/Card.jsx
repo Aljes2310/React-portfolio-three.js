@@ -8,7 +8,7 @@ const Borde=styled.div`
 		background:#fff;
 		border:1px solid #CB6074;
 		text-align:center;
-		cursor:pointer;
+		/* cursor:pointer; */
         box-shadow: 0px 6px 11px 6px rgba(0, 0, 0, 0.8); /* h-offest, v-offset, blurr, radius of shadow */
 `
 
@@ -57,7 +57,7 @@ font-family: monospace;
 function Card({titulo, descripcion, tools, imagen, link_img}) {
   return (
     <Borde>
-        <Imagen src={imagen} href={link_img}/>
+        <a href={link_img} target="_blank"><Imagen src={imagen}/> </a>
         <Title> {titulo} </Title>
         <Texto> {descripcion}</Texto>
         <Toolscol> 
