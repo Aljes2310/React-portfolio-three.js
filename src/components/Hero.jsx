@@ -82,12 +82,12 @@ const Description= styled.p`
 `
 
 
-const Imagen= styled.img`
+/* const Imagen= styled.img`
   border-radius: 50%;
   width: 600px;
   height: 200px;
-  object-fit: contain; /* que mande una escala que se vea bien */
-  position: absolute; /* como el elemento es colocado */
+  object-fit: contain; que mande una escala que se vea bien 
+  position: absolute; como el elemento es colocado 
   top: 0;
   bottom: 0;
   left: 0;
@@ -101,7 +101,7 @@ const Imagen= styled.img`
   }
 `;
 
-
+ */
 
 const hero = () => {
   return (
