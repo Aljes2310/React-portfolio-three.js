@@ -1,9 +1,8 @@
 import styled from "styled-components"
-import Hero from "./components/hero";
 import Stack from "./components/Stack";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-
+import Hero from "./components/Hero";
 
 const Container = styled.div`
   height: 100vh; /* no cambiar a 100% que deja de funcionar los efectos que siguen */

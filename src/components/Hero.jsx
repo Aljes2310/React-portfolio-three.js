@@ -103,7 +103,7 @@ const Description= styled.p`
 
  */
 
-const hero = () => {
+const Hero = () => {
   return (
     <Section id="hero">
         <Navbar></Navbar>
@@ -142,4 +142,4 @@ const hero = () => {
   )
 }
 
-export default hero
+export default Hero
