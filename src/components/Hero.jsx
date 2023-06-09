@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import Navbar from "./Navbar";
-import { Sphere,Torus, OrbitControls, MeshDistortMaterial, Stage } from "@react-three/drei";
+import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas} from "@react-three/fiber";
 import Laptopcp from "./Laptopcp";
 
@@ -11,16 +11,23 @@ const Section = styled.section`
   scroll-snap-align: center; /* posicion del scroll en cada slide  en este caso el centro */
   align-items: center;
   justify-content: space-between;
-
+@media only screen and (max-width:760px){
+  justify-content:center;
+}
 `
 
 const Container= styled.div`
-    height:100vh;
+    height:100%;
     width: 1500px;
     scroll-snap-align: center;
     display: flex;
     justify-content: space-between;
 
+    @media only screen and (max-width:760px){
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
 `
 
 const Left= styled.div`
@@ -30,12 +37,22 @@ const Left= styled.div`
    gap: 5px;
    align-items: center;
    justify-content: center; /* center en el main axis, en este caso el vertical porque es flex column */
+   @media only screen and (max-width:760px){
+  width:100%;
+  margin-top:40px;
+}
+
+
 `
 
 const Right= styled.div`
   flex:1;
-  position: relative;
+  /* position: relative; */
   margin-bottom: 50px;
+  @media only screen and (max-width:760px){
+    width: 100%;
+    margin-bottom: 50px;
+}
 `
 
 
@@ -43,6 +60,9 @@ const Title= styled.p`
   font-family: bold;
   font-size: 70px;
   font-weight: 700;
+  @media only screen and (max-width:760px){
+    font-size: 40px;
+}
 `
 
 const Subtitle= styled.p`
@@ -50,6 +70,9 @@ const Subtitle= styled.p`
   font-size: 50px;
   font-weight: 400;
   color:white;
+  @media only screen and (max-width:760px){
+    font-size: 30px;
+}
 
 `
 
@@ -87,7 +110,7 @@ const hero = () => {
           <Left>
             <Title>Alfredo Alvarado</Title>
             <Subtitle>Back End Developer</Subtitle>
-            <Description>Reliable</Description>
+            <Description></Description>
           </Left>
 
           <Right>

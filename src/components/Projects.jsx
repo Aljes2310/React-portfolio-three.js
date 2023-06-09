@@ -1,18 +1,18 @@
 import styled from "styled-components"
 import Card from "./Card";
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { Carousel } from 'react-responsive-carousel';
-
 
 
 const Section = styled.section`
   height: 100vh;
   scroll-snap-align: center; /* posicion del scroll en cada slide  en este caso el centro */
+  @media only screen and (max-width:760px){
+  width:100%;
+  height: 350vh;
+}
 `
 const Container = styled.div`
 width: 100%;
-height:100hv;
+height:100%;
 display:flex;
 flex-direction: column;
 justify-content: center;
@@ -38,6 +38,10 @@ align-items: center;
 margin-top: 40px;
 gap: 30px;
 
+@media only screen and (max-width:760px){
+  width:100%;
+  flex-direction: column;
+}
 `
 
 

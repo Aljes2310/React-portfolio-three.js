@@ -6,17 +6,22 @@ import emailjs from '@emailjs/browser';
 const Section = styled.section`
   height: 100vh;
   scroll-snap-align: center; /* posicion del scroll en cada slide  en este caso el centro */
-
-
+  @media only screen and (max-width:760px){ 
+    margin-top:40px;
+  }
 `
 
 const Container= styled.div`
     height:100%;
     width: 100%;
-    scroll-snap-align: center;
     display: flex;
     justify-content: space-between; /* separate left from right */
+    @media only screen and (max-width:760px){ 
+    flex-direction:column;
+    gap:40px;
+    margin-top:40px;
 
+  }
 `
 
 const Left= styled.div`
@@ -25,6 +30,9 @@ const Left= styled.div`
    flex-direction: column;
    justify-content: center; /* center en el main axis, en este caso el vertical porque es flex column */
    align-items: center;
+   @media only screen and (max-width:760px){ 
+    flex-direction:column;
+  }
 `
 
 const Right= styled.div`
@@ -36,6 +44,10 @@ const Form = styled.form`
     display:flex;
     flex-direction: column;
     gap:30px;
+    @media only screen and (max-width:760px){ 
+        width:300px;
+        gap:20px;
+  }
  
 `
 

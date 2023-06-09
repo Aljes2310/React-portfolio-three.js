@@ -6,14 +6,20 @@ import { OrbitControls, PerspectiveCamera, RenderTexture, Sphere, Text} from "@r
 const Section = styled.section`
   height: 100vh;
   scroll-snap-align: center; /*  */
+@media only screen and (max-width:760px){
+  height: 150vh;
+}
 `
 
 const Container=styled.div`
-height:100vh;
+height:100%;
 width:100%;
 display:flex;
 flex-direction: column;
 align-items: center;
+@media only screen and (max-width:760px){
+  height: 150vh;
+}
 `
 
 
@@ -23,6 +29,10 @@ flex-direction: column;
 align-items: center;
 gap:30px;
 width: 1000px;
+@media only screen and (max-width:760px){
+  text-align:center;
+  width:90%;
+}
 `
 
 const Title= styled.h1`
@@ -31,6 +41,9 @@ const Title= styled.h1`
   color:white;
   font-family: bold;
   font-weight: 700;
+  @media  only screen and (max-width:760px){
+  font-size: 50px;
+}
   `
 
 const Description=styled.p`
@@ -38,15 +51,23 @@ const Description=styled.p`
   color:black;
   font-family: 'monospace';
   font-weight: 500;
+  @media only screen and (max-width:760px){
+  font-size: 20px;
+  text-align:center;
+}
 `
 
 const Boxes=styled.div`
 display:flex;
 flex-direction: row;
+flex-wrap: none;
 justify-content: center;
-  width: 100%;
+width: 100%;
   height: 100%;
-
+  @media only screen and (max-width:760px){
+    flex-direction: column;
+    width:900px;
+}
 
 `
 
@@ -77,7 +98,7 @@ const stack = () => {
       y_negativo={"/mysql.png"} z_positivo={"/mysql.png"} z_negativo={"/mongo.png"}/>
       
     </Boxes>
-     
+   
     
 
 

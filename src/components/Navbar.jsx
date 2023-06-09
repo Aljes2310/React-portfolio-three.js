@@ -7,7 +7,9 @@ import {HashLink as Link} from 'react-router-hash-link';
 const Section = styled.div`
   display: flex;
   justify-content: center; 
-  
+  @media only screen and (max-width:760px){
+    width:100%;
+  }
 `
 
 const Container = styled.div`
@@ -15,6 +17,11 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between; /* separa los elementos a los extremos */
     align-items: center; /* vertical */
+    @media only screen and (max-width:760px){
+    width:100%;
+    flex-direction:column;
+  }
+
 `
 
 const Links = styled.div`
@@ -28,7 +35,10 @@ display: flex;
   gap: 40px;
   list-style: none;
   padding: 20px;
-  
+  @media only screen and (max-width:760px){
+    gap: 15px;
+    margin-top:20px;
+  }
     
 `
 const ListItem = styled.li`
@@ -36,7 +46,9 @@ font-size: 35px;
 color: black;
 font-family: monospace;
 font-weight: 700;
-
+@media only screen and (max-width:760px){
+  font-size: 20px;
+  }
     
 `
 
@@ -45,6 +57,14 @@ const Icons= styled.div`
     gap:30px;
     padding: 20px;
     margin-left: 100px;
+    @media only screen and (max-width:760px){
+    height: 20px;
+    justify-content:center;
+    align-items:center;
+    margin-left:0px;
+    margin-top:25px
+  }
+
 `
 const Icon= styled.a`
 

@@ -3,11 +3,10 @@ import Hero from "./components/hero";
 import Stack from "./components/Stack";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Test from "./components/Test";
 
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100vh; /* no cambiar a 100% que deja de funcionar los efectos que siguen */
   scroll-snap-type: y mandatory; /* donde se controla el scroll */
   scroll-behavior: smooth;
   overflow-y: auto;
@@ -16,6 +15,9 @@ const Container = styled.div`
   &::-webkit-scrollbar{
     display: none            /* desaprece el scrollbar */
   }
+  @media only screen and (max-width:760px){
+}
+
 `
 
 function App() {
