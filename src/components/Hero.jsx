@@ -103,7 +103,7 @@ const Description= styled.p`
 
  */
 
-const Hero = () => {
+function Hero() {
   return (
     <Section id="hero">
         <Navbar></Navbar>
