@@ -81,6 +81,7 @@ const Description= styled.p`
 
 `
 
+
 const Imagen= styled.img`
   border-radius: 50%;
   width: 600px;

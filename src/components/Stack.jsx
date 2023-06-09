@@ -1,7 +1,5 @@
 import styled from "styled-components"
 import Boxready from "./Box";
-import { Canvas, useLoader } from '@react-three/fiber'
-import { OrbitControls, PerspectiveCamera, RenderTexture, Sphere, Text} from "@react-three/drei";
 
 const Section = styled.section`
   height: 100vh;
