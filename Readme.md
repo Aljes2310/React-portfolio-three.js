@@ -33,3 +33,13 @@ npm install three @react-three/fiber @react-three/drei
 npm install -g gltf-pipeline
 * gltf-pipeline -i scene.gltf -o laptopcp.gltf -d
 * npx gltfjsx laptopcp.gltf --transform
+
+
+## in eslintrc.cjs, to deloy in vercel
+add {
+  ...
+  env: {
+    node: true
+  }
+  ...
+}
